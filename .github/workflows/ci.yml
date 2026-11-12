@@ -1,0 +1,23 @@
+
+name: Employee Management CI
+
+on: push
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Check Node.js version
+        run: node --version
+
+      - name: Run application
+        run: |
+          node app.js
+          node login.js
+
+      - name: Success message
+        run: echo "CI Pipeline completed successfully!"

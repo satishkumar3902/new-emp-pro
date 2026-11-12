@@ -1,0 +1,11 @@
+
+{
+  "name": "employee-mgmt-ci",
+  "version": "1.0.0",
+  "description": "Employee management application for GitHub Actions practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.js && node login.js"
+  }
+}
